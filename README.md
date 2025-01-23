@@ -1,6 +1,21 @@
 # GNNsMemo
 
 
+## Pre-requisites
+
+The following libraries are required to run the code and reproduce the results:
+
+```Python
+Pytorch-Geometric == 2.5.3
+Pytorch ==2.2.1
+DGL == 2.1.0+cu118 
+```
+
+## Datasets
+
+The datasets used are Cora, Citeseer, Texas and Chameleon. The first two datasets are automatically downloaded from the PyTorch Geometric. But the other 2 datasets are provided in the datasets folder. Don't forget to adjust this file path in ```baselinegcn.py``` file!
+
+
 ## Memorization score from SSL Encoders -
 
 To compute the memorization score for a GCN as shown in [Localizing Memorization in SSL Vision Encoders](https://arxiv.org/abs/2409.19069), 
