@@ -1,0 +1,91 @@
+2025-02-26 11:16:40,828 - Using device: cpu
+2025-02-26 11:16:40,903 - 
+Augmentation Configuration:
+2025-02-26 11:16:40,904 - Augmentation Type: flip
+2025-02-26 11:16:40,904 - Number of Augmentations: 5
+2025-02-26 11:16:40,904 - Feature Flip Rate: 0.1
+2025-02-26 11:16:40,904 - 
+Dataset Information:
+2025-02-26 11:16:40,904 - Dataset Name: Cora
+2025-02-26 11:16:40,904 - Number of Nodes: 2485
+2025-02-26 11:16:40,904 - Number of Edges: 10138
+2025-02-26 11:16:40,904 - Number of Features: 1433
+2025-02-26 11:16:40,911 - Number of Classes: 7
+2025-02-26 11:16:40,915 - 
+Partition Statistics:
+2025-02-26 11:16:40,915 - Shared: 745 nodes
+2025-02-26 11:16:40,915 - Candidate: 373 nodes
+2025-02-26 11:16:40,915 - Independent: 373 nodes
+2025-02-26 11:16:40,916 - Extra test nodes: 373 nodes
+2025-02-26 11:16:40,916 - Validation set: 497 nodes
+2025-02-26 11:16:40,916 - Test set: 497 nodes
+2025-02-26 11:16:40,916 - 
+Training Set Information:
+2025-02-26 11:16:40,916 - Model f training on 1118 nodes:
+2025-02-26 11:16:40,916 - - 745 shared nodes: [237, 1937, 139, 873, 2206]...
+2025-02-26 11:16:40,916 - - 373 candidate nodes: [1074, 212, 281, 1862, 1047]...
+2025-02-26 11:16:40,916 - 
+Model g training on 1118 nodes:
+2025-02-26 11:16:40,916 - - 745 shared nodes: [237, 1937, 139, 873, 2206]...
+2025-02-26 11:16:40,916 - - 373 independent nodes: [2114, 1342, 1433, 1752, 1246]...
+2025-02-26 11:16:40,941 - 
+Model Architecture Details:
+2025-02-26 11:16:40,941 - Model Type: GCN
+2025-02-26 11:16:40,941 - Input Features: 1433
+2025-02-26 11:16:40,941 - Hidden Dimensions: 32
+2025-02-26 11:16:40,941 - Number of Layers: 5
+2025-02-26 11:16:40,941 - Output Classes: 7
+2025-02-26 11:16:40,941 - 
+Optimizer Settings:
+2025-02-26 11:16:40,941 - Optimizer: Adam
+2025-02-26 11:16:40,941 - Learning Rate: 0.01
+2025-02-26 11:16:40,941 - Weight Decay: 0.0005
+2025-02-26 11:16:40,941 - 
+Starting model training...
+2025-02-26 11:16:41,455 - Epoch 10/100:
+2025-02-26 11:16:41,456 - Model f - Loss: 0.9091, Test Acc: 0.7022
+2025-02-26 11:16:41,456 - Model g - Loss: 1.1942, Test Acc: 0.6378
+2025-02-26 11:16:41,899 - Epoch 20/100:
+2025-02-26 11:16:41,899 - Model f - Loss: 0.3630, Test Acc: 0.8249
+2025-02-26 11:16:41,899 - Model g - Loss: 0.3685, Test Acc: 0.8511
+2025-02-26 11:16:42,601 - Epoch 30/100:
+2025-02-26 11:16:42,601 - Model f - Loss: 0.2539, Test Acc: 0.8592
+2025-02-26 11:16:42,601 - Model g - Loss: 0.2051, Test Acc: 0.8410
+2025-02-26 11:16:43,097 - Epoch 40/100:
+2025-02-26 11:16:43,097 - Model f - Loss: 0.1580, Test Acc: 0.8410
+2025-02-26 11:16:43,097 - Model g - Loss: 0.1566, Test Acc: 0.8632
+2025-02-26 11:16:43,506 - Epoch 50/100:
+2025-02-26 11:16:43,506 - Model f - Loss: 0.1216, Test Acc: 0.8451
+2025-02-26 11:16:43,506 - Model g - Loss: 0.1253, Test Acc: 0.8692
+2025-02-26 11:16:43,942 - Epoch 60/100:
+2025-02-26 11:16:43,942 - Model f - Loss: 0.1138, Test Acc: 0.8451
+2025-02-26 11:16:43,942 - Model g - Loss: 0.1218, Test Acc: 0.8612
+2025-02-26 11:16:44,354 - Epoch 70/100:
+2025-02-26 11:16:44,354 - Model f - Loss: 0.1016, Test Acc: 0.8531
+2025-02-26 11:16:44,354 - Model g - Loss: 0.1199, Test Acc: 0.8612
+2025-02-26 11:16:44,851 - Epoch 80/100:
+2025-02-26 11:16:44,851 - Model f - Loss: 0.0768, Test Acc: 0.8451
+2025-02-26 11:16:44,851 - Model g - Loss: 0.0902, Test Acc: 0.8672
+2025-02-26 11:16:45,400 - Epoch 90/100:
+2025-02-26 11:16:45,400 - Model f - Loss: 0.0679, Test Acc: 0.8431
+2025-02-26 11:16:45,400 - Model g - Loss: 0.0834, Test Acc: 0.8592
+2025-02-26 11:16:46,201 - Epoch 100/100:
+2025-02-26 11:16:46,201 - Model f - Loss: 0.0880, Test Acc: 0.8370
+2025-02-26 11:16:46,201 - Model g - Loss: 0.0782, Test Acc: 0.8571
+2025-02-26 11:16:46,204 - Models saved as f_model.pt and g_model.pt
+2025-02-26 11:16:46,204 - 
+Loading saved models...
+2025-02-26 11:16:46,226 - Models loaded successfully
+2025-02-26 11:16:46,226 - 
+Calculating memorization scores...
+2025-02-26 11:17:40,804 - Average memorization score for shared nodes: -0.0397
+2025-02-26 11:18:07,930 - Average memorization score for candidate nodes: -0.0484
+2025-02-26 11:18:34,998 - Average memorization score for independent nodes: -0.0359
+2025-02-26 11:19:01,271 - Average memorization score for extra nodes: -0.0384
+2025-02-26 11:19:01,272 - Average memorization score for shared nodes: -0.0397
+2025-02-26 11:19:01,272 - Average memorization score for candidate nodes: -0.0484
+2025-02-26 11:19:01,272 - Average memorization score for independent nodes: -0.0359
+2025-02-26 11:19:01,273 - Average memorization score for extra nodes: -0.0384
+2025-02-26 11:19:01,273 - 
+Generating visualization...
+2025-02-26 11:19:02,024 - Plot saved to: results/Cora/memorization_Cora_flip_0.1.png
